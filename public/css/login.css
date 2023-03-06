@@ -1,0 +1,10 @@
+.login-content {
+    position: relative;
+    height: 100vh;
+    z-index: 99;
+}
+
+.bg-image {
+    background-position: 0 50%;
+    background-size: cover;
+}

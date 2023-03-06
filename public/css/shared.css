@@ -1,0 +1,140 @@
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* home css */
+.iq-sidebar {
+    background: linear-gradient(#061741, #061741, #0E2F49);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background: #0c2556;
+    transition: all .6s ease-in-out;
+    -ms-box-shadow: 0 0 30px rgba(12,37,86,.05);
+    -o-box-shadow: 0 0 30px rgba(12,37,86,.05);
+    box-shadow: 0 0 30px rgb(12 37 86 / 5%);
+}
+
+.iq-sidebar-logo {
+    padding: 20px 4px 4px;
+    width: 84%;
+    margin: auto;
+    position: relative;
+    transition: all .6s ease-in-out;
+}
+
+.iq-sidebar-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.iq-sidebar-logo img {
+    height: auto;
+}
+
+.side-menu-bt-sidebar-1 {
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper-menu {
+    font-size: 30px;
+    text-align: center;
+    color: #8f9fbc;
+    position: relative;
+    transition: all .6s ease-in-out;
+}
+
+[data-scrollbar] {
+    display: block;
+    position: relative;
+}
+
+.data-scrollbar {
+    height: 100vh;
+}
+
+.scroll-content {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.iq-sidebar-menu {
+    color: #8f9fbc;
+    position: relative;
+}
+
+.iq-sidebar-menu .side-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.iq-sidebar-menu .side-menu li {
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+}
+
+.sidebar-layout {
+    padding: 0 15px;
+}
+
+.iq-sidebar-menu .side-menu li a {
+    color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+    padding: 0.625rem 0.938rem;
+    line-height: 18px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    text-transform: capitalize;
+    transition: all .4s;
+}
+
+.iq-sidebar-menu .side-menu li a span {
+    white-space: nowrap;
+    padding: 0;
+    display: inline-block;
+    transition: none;
+}
+
+.dropdown-menu {
+    animation: oc .3s ease forwards;
+    min-width: 12rem;
+    padding: 0.4rem;
+    box-shadow: 0 16px 24px rgb(96 97 112 / 10%), 0 32px 48px rgb(0 0 0 / 15%);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #324253;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0 solid rgba(0,0,0,.15);
+    border-radius: 5px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    -ms-box-shadow: 0 10px 30px 0 rgba(0,60,179,.05);
+    -o-box-shadow: 0 10px 30px 0 rgba(0,60,179,.05);
+    box-shadow: 0 10px 30px 0 rgb(0 60 179 / 5%);
+    border: 0 solid #dfe7ff;
+}
