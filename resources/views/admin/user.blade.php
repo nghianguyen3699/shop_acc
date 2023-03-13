@@ -30,7 +30,7 @@
             <!-- /.card-header -->
             <div class="card-body">
                 <div id="jsGrid1" class="jsgrid" style="position: relative; height: 100%; width: 100%;">
-                    <div class="jsgrid-grid-header jsgrid-header-scrollbar">
+                    <div class="jsgrid-grid-header jsgrid-header-scrollbar" style="overflow-y: hidden">
                         <table class="jsgrid-table">
                             <tr class="jsgrid-header-row">
                                 <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 100px;">Tên</th>
@@ -44,7 +44,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="jsgrid-grid-body" style="height: 821px;">
+                    <div class="jsgrid-grid-body" style="overflow-y: auto">
                         <table class="jsgrid-table">
                             <tbody>
                                 @foreach ($users as $user)
@@ -54,8 +54,8 @@
                                     <td class="jsgrid-cell" style="width: 200px;">{{ $user->email }}</td>
                                     <td class="jsgrid-cell jsgrid-align-center" style="width: 100px;">secret</td>
                                     <td class="jsgrid-cell jsgrid-align-center" style="width: 70px;">
-                                        <a href="/admin/user?id={{ $user->id }}"><button type="button" class="btn btn-primary btn-xs btn-user">Chi tiết</button></a>
-                                        <a href="/admin/message?id={{ $user->id }}"<button type="button" class="btn btn-primary btn-xs btn-user" style="width: 55px;">Nhắn tin</button></a>
+                                        <a href="/admin/user/{{ $user->id }}"><button type="button" class="btn btn-primary btn-xs btn-user">Chi tiết</button></a>
+                                        <a href="/admin/message/{{ $user->id }}"<button type="button" class="btn btn-primary btn-xs btn-user" style="width: 55px;">Nhắn tin</button></a>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -63,24 +63,9 @@
                         </table>
                     </div>
                     <div class="jsgrid-pager-container">
-                        <div class="jsgrid-pager">Pages: <span
-                                class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button"><a
-                                    href="javascript:void(0);">First</a></span> <span
-                                class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button"><a
-                                    href="javascript:void(0);">Prev</a></span> <span
-                                class="jsgrid-pager-page jsgrid-pager-current-page">1</span><span
-                                class="jsgrid-pager-page"><a href="javascript:void(0);">2</a></span><span
-                                class="jsgrid-pager-page"><a href="javascript:void(0);">3</a></span><span
-                                class="jsgrid-pager-page"><a href="javascript:void(0);">4</a></span><span
-                                class="jsgrid-pager-page"><a href="javascript:void(0);">5</a></span> <span
-                                class="jsgrid-pager-nav-button"><a href="javascript:void(0);">Next</a></span> <span
-                                class="jsgrid-pager-nav-button"><a href="javascript:void(0);">Last</a></span>
-                            &nbsp;&nbsp; 1 of 5 </div>
-                    </div>
-                    <div class="jsgrid-load-shader"
-                        style="display: none; position: absolute; inset: 0px; z-index: 1000;"></div>
-                    <div class="jsgrid-load-panel"
-                        style="display: none; position: absolute; top: 50%; left: 50%; z-index: 1000;">Please, wait...
+						<div class="jsgrid-pager">
+							{!! $users->links() !!}
+						</div>
                     </div>
                 </div>
             </div>

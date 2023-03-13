@@ -25,8 +25,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        return view('/admin/user', ['users' => $users]);
+		// $a = '123';
+		// dd($a);
+        $users = User::paginate(10);
+        return view('admin/user', ['users' => $users]);
     }
 
     public function create()
@@ -79,8 +81,13 @@ class UserController extends Controller
         return redirect('/users')->with('success', 'User deleted successfully.');
     }
 
-    // public function show_all(Request $request, User $user) {
-    //     $users = User::all();
-    //     return view
-    // }
+    public function show($id, User $users) {
+        $user = User::find($id);
+		// echo '123';
+		$user2 = $users->select('name', 'email', 'total_money')
+						->where('id', $id)
+						->first();
+		// dd($user2);
+    	return view('admin/show_user', ['user' => $user]);
+    }
 }

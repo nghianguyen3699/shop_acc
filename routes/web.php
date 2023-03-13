@@ -34,7 +34,7 @@ Route::prefix('admin/')->group(function(){
     Route::get('/management', [App\Http\Controllers\Admin\ManagementController::class, 'index'])->name('admin.management');
     Route::prefix('user/')->group(function(){
         Route::get('/', [App\Http\Controllers\Client\UserController::class, 'index'])->name('user.index');
-        Route::get('/{id}', [App\Http\Controllers\Admin\UserController::class, 'show'])->name('admin.user.{:id}');
+        Route::get('/{id}', [App\Http\Controllers\Client\UserController::class, 'show'])->name('admin.user.{:id}');
     });
 });
 
