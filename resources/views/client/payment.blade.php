@@ -1,3 +1,7 @@
+<link href="{{ asset('css/style.default.css') }}" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/qr-code.css') }}" rel="stylesheet">
+<link href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 <div id="page" style="">
 	<nav class="navbar navbar-default hidden-xs">
 		<div class="container-fluid" style="padding: 1px;padding: 1px;width: 45%;min-width: 800px;">
@@ -14,7 +18,7 @@
 	</nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-4 left">
+			<div class="col-xs-12 col-sm-12 col-md-4 left" style="background-color: #030303">
 				<div class="info-box">
 					<div class="receipt">
 						<img src="https://sellclonemmo.vn/assets/storage/images/logo_dark_W1Q.png" width="100%">
@@ -23,14 +27,14 @@
 						<p><i class="fa fa-university" aria-hidden="true"></i>
 							<span style="padding-left: 5px;">Nạp Tiền</span>
 							<br>
-							<span style="padding-left: 25px;word-break: keep-all;">ACB</span>
+							<span style="padding-left: 25px;word-break: keep-all;">{{ $account_bank }}</span>
 						</p>
 					</div>
 					<div class="entry">
 						<p><i class="fa fa-credit-card" aria-hidden="true"></i>
 							<span style="padding-left: 5px;">Số tài khoản</span>
 							<br>
-							<b id="copyStk" style="padding-left: 25px;word-break: keep-all;color:greenyellow;">27375367</b>
+							<b id="copyStk" style="padding-left: 25px;word-break: keep-all;color:greenyellow;">{{ $account_number }}</b>
 							<i onclick="copy()" data-clipboard-target="#copyStk" class="fas fa-copy copy"></i>
 						</p>
 					</div>
@@ -38,21 +42,21 @@
 						<p><i class="fa fa-user" aria-hidden="true"></i>
 							<span style="padding-left: 5px;">Chủ tài khoản</span>
 							<br>
-							<span style="padding-left: 25px;word-break: keep-all;">DANG THI BICH HIEN</span>
+							<span style="padding-left: 25px;word-break: keep-all;">{{ $account_name }}</span>
 						</p>
 					</div>
 					<div class="entry">
-						<p><i class="fa fa-money" aria-hidden="true"></i>
+						<p><i class="fa fa-money-bill" aria-hidden="true"></i>
 							<span style="padding-left: 5px;">Số tiền cần thanh toán</span>
 							<br>
-							<b style="padding-left: 25px;color:aqua;">10.000đ</b>
+							<b style="padding-left: 25px;color:aqua;"></b>
 						</p>
 					</div>
 					<div class="entry">
 						<p><i class="fa fa-comment" aria-hidden="true"></i>
 							<span style="padding-left: 5px;">Nội dung chuyển khoản</span>
 							<br>
-							<b id="copyNoiDung" style="padding-left: 25px;word-break: keep-all;color:yellow;">HM9Y8</b>
+							<b id="copyNoiDung" style="padding-left: 25px;word-break: keep-all;color:yellow;"></b>
 							<i onclick="copy()" data-clipboard-target="#copyNoiDung" class="fas fa-copy copy"></i>
 						</p>
 					</div>
@@ -61,7 +65,7 @@
 							<span style="padding-left: 5px;">Trạng thái 
 							</span>
 							<br>
-							<i class="fa fa-spinner fa-spin"></i><span id="status_payment" style="padding-left: 25px;word-break: break-all;"><p class="mb-0 text-warning font-weight-bold d-flex justify-content-start align-items-center">Đang chờ thanh toán</p></span>
+							<span id="status_payment" style="padding-left: 25px;word-break: break-all;"><p class="mb-0 text-warning font-weight-bold d-flex justify-content-start align-items-center">Đang chờ thanh toán</p></span>
 						</p>
 					</div>
 				</div>

@@ -27,6 +27,8 @@ Route::prefix('client/')->group(function(){
     Route::get('/recharge', [App\Http\Controllers\RechargeController::class, 'index'])->name('client.recharge');
     Route::get('/invoices', [App\Http\Controllers\InvoicesController::class, 'index'])->name('client.invoices');
     Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('client.contact');
+    Route::get('/payment/{code}', [App\Http\Controllers\Client\PaymentController::class, 'index'])->name('client.payment');
+    Route::post('/payment', [App\Http\Controllers\Client\PaymentController::class, 'create'])->name('client.payment.create');
 });
 
 Route::prefix('admin/')->group(function(){
