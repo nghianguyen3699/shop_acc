@@ -28,10 +28,10 @@
         <div class="wrapper">
             <div class="iq-sidebar sidebar-default">
                 <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
-                    <a href="https://sellclonemmo.com/" class="header-logo">
-                        <img src="https://sellclonemmo.com/assets/storage/images/logo_dark_8H0.png"
+                    <a href="localhost/" class="header-logo">
+                        <img src="localhost/assets/storage/images/logo_dark_8H0.png"
                             class="img-fluid rounded-normal light-logo" alt="logo">
-                        <img src="https://sellclonemmo.com/assets/storage/images/logo_dark_8H0.png"
+                        <img src="localhost/assets/storage/images/logo_dark_8H0.png"
                             class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
                     </a>
                     <div class="side-menu-bt-sidebar-1">
@@ -61,14 +61,14 @@
                                                     <li onclick="changeLanguage(8)"
                                                         class="dropdown-item-1 list-group-item px-2"><a class="p-0" href="#"
                                                             style="color: #8f9fbc;"><img
-                                                                src="https://sellclonemmo.com/assets/storage/flags/flag_Vietnamese.png"
+                                                                src="localhost/assets/storage/flags/flag_Vietnamese.png"
                                                                 alt="img-flaf" class="img-fluid mr-2"
                                                                 style="width: 30px;height: 20px;min-width: 15px;">Vietnamese</a>
                                                     </li>
                                                     <li onclick="changeLanguage(16)"
                                                         class="dropdown-item-1 list-group-item px-2"><a class="p-0" href="#"
                                                             style="color: #8f9fbc;"><img
-                                                                src="https://sellclonemmo.com/assets/storage/flags/flag_English.png"
+                                                                src="localhost/assets/storage/flags/flag_English.png"
                                                                 alt="img-flaf" class="img-fluid mr-2"
                                                                 style="width: 30px;height: 20px;min-width: 15px;">English</a>
                                                     </li>
@@ -173,7 +173,7 @@
                             <span class="badge badge2 border border-primary text-primary"><i
                                     class="fas fa-wallet mr-1"></i>Ví:
                                 <b>0đ</b></span>
-                            <a href="https://sellclonemmo.com/client/login"
+                            <a href="localhost/client/login"
                                 class="badge border badge2 border-danger text-danger"><i
                                     class="fas fa-sign-in-alt mr-1"></i><b>Đăng Nhập</b></a>
                         </div>
@@ -245,16 +245,16 @@
                                         <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle"
                                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            <img src="https://sellclonemmo.com/public/datum/assets/images/user/1.jpg"
+                                            <img src="localhost/public/datum/assets/images/user/1.jpg"
                                                 class="img-fluid avatar-rounded" alt="user">
                                             <span class="mb-0 ml-2 user-name">Bạn chưa đăng nhập</span>
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                             <li class="dropdown-item d-flex ">
-                                                <a href="https://sellclonemmo.com/client/login">Đăng Nhập</a>
+                                                <a href="localhost/client/login">Đăng Nhập</a>
                                             </li>
                                             <li class="dropdown-item d-flex ">
-                                                <a href="https://sellclonemmo.com/client/register">Đăng Ký</a>
+                                                <a href="localhost/client/register">Đăng Ký</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -267,7 +267,7 @@
             <script>
                 function changeLanguage(id) {
                     $.ajax({
-                        url: "https://sellclonemmo.com/ajaxs/client/changeLanguage.php",
+                        url: "localhost/ajaxs/client/changeLanguage.php",
                         method: "POST",
                         dataType: "JSON",
                         data: {

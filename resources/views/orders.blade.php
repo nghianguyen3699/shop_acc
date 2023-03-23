@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-lg-6 text-left">
                     <div class="mb-3">
-                        <a href="https://sellclonemmo.com/client/home/shop-account" type="button"
+                        <a href="localhost/client/home/shop-account" type="button"
                             class="btn btn-danger btn-sm"><i class="fas fa-arrow-left mr-1"></i>Quay Lại</a>
                     </div>
                 </div>

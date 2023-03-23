@@ -13,7 +13,7 @@
                                 </div>
                                 <div class="iq-alert-text">
                                     <p style="text-align:center"><span style="font-size:20px">&nbsp;<strong><u><a
-                                                        href="https://sellclonemmo.com"
+                                                        href="localhost"
                                                         target="_blank">SELLCLONEMMO</a></u>&nbsp;</strong>- Site
                                             Clone&nbsp;nhà trồng <strong><span style="color:#e74c3c">Reg &amp;
                                                     Nuôi</span></strong> trên&nbsp;Phone Thật Zin 100% cam kết cung
@@ -59,7 +59,7 @@
                                         <table class="table table-striped table-hover mb-0">
                                             <thead class="table-color-heading" style="background:#061741;color:white;">
                                                 <tr>
-                                                    <th><img src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                    <th><img src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="30px" class="mr-2">DANH SÁCH CLONE FACEBOOK</th>
                                                     <th class="text-center" width="10%">Quốc gia</th>
                                                     <th class="text-center" width="10%">Hiện có</th>
@@ -71,7 +71,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">1_CLONE NAME
                                                             VIỆT - VERY GMAI - AVT/COVER - INFO - BÀI ĐĂNG</span>
                                                         <p style="font-size: 13px;"><i
@@ -101,7 +101,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">2_CLONE NAME
                                                             VIỆT - VERY GMAIL - 0 -&gt; 20 BB - AVT &gt; 2 NGÀY - GỢI Ý
                                                             CAO</span>
@@ -133,7 +133,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">3_CLONE NAME
                                                             VIỆT - VERY GMAIL - 20 -&gt; 70 BB - AVT/COVER &gt; 3 NGÀY -
                                                             INFO - BÀI ĐĂNG - FULL GỢI Ý</span>
@@ -165,7 +165,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">4_CLONE NAME
                                                             VIỆT - VERY HOTMAIL - 20 -&gt; 70 BB - AVT/COVER &gt; 3 NGÀY
                                                             - INFO - BÀI ĐĂNG - FULL GỢI Ý</span>
@@ -197,7 +197,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">5_CLONE NAME
                                                             VIỆT - VERY HOTMAIL - 20 -&gt; 70 BB - AVT/COVER &gt; 7 NGÀY
                                                             - INFO - BÀI ĐĂNG - FULL GỢI Ý - ĐÃ KHÁNG 282</span>
@@ -228,7 +228,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">6_CLONE NAME
                                                             VIỆT - VERY HOTMAIL - 70 -&gt; 300 BB - AVT/COVER &gt; 3
                                                             NGÀY - INFO - BÀI ĐĂNG - FULL GỢI Ý</span>
@@ -259,7 +259,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">7_CLONE NAME
                                                             VIỆT - VERY HOTMAIL TRUSTED - 100 -&gt; 400 BB - AVT/COVER
                                                             &gt; 14 NGÀY - INFO - FULL GỢI Ý</span>
@@ -292,7 +292,7 @@
                                                 <tr>
                                                     <td>
                                                         <img class="mr-1 py-1"
-                                                            src="https://sellclonemmo.com/assets/storage/images/categoryUJXE.png"
+                                                            src="localhost/assets/storage/images/categoryUJXE.png"
                                                             width="25px"><span style="font-weight: bold;">8_CLONE NAME
                                                             VIỆT - VERY HOTMAIL TRUSTED - 800 -&gt; 2000 BB - AVT/COVER
                                                             &gt; 2 THÁNG - INFO - BÀI ĐĂNG - FULL GỢI Ý - NĂM TẠO
@@ -333,7 +333,7 @@
                         <div class="modal fade" id="modalBuy" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered mw-650px">
                                 <div class="modal-content"
-                                    style="background-image:url('https://sellclonemmo.com/resources/images/bg-buy.png');">
+                                    style="background-image:url('localhost/resources/images/bg-buy.png');">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Thanh toán đơn hàng</h5>
                                         <button type="button" class="close" style="color: red;" data-dismiss="modal"
@@ -383,7 +383,7 @@
                                 var token = $("#token").val();
                                 $('#btnBuy').html('<i class="fa fa-spinner fa-spin"></i> Loading...').prop('disabled', true);
                                 $.ajax({
-                                    url: "https://sellclonemmo.com/ajaxs/client/buyProduct.php",
+                                    url: "localhost/ajaxs/client/buyProduct.php",
                                     method: "POST",
                                     dataType: "JSON",
                                     data: {
@@ -401,7 +401,7 @@
                                                 message: data.msg,
                                                 timer: 5000
                                             });
-                                            $urlReturn = 'https://sellclonemmo.com/client/order/' + data.transid;
+                                            $urlReturn = 'localhost/client/order/' + data.transid;
                                             setTimeout("location.href = '" + $urlReturn + "';", 1000);
                                         } else {
                                             Swal.fire(
@@ -451,7 +451,7 @@
                             function totalPayment() {
                                 $('#total').html('<i class="fa fa-spinner fa-spin"></i> Đang xử lý...');
                                 $.ajax({
-                                    url: "https://sellclonemmo.com/ajaxs/client/totalPayment.php",
+                                    url: "localhost/ajaxs/client/totalPayment.php",
                                     method: "POST",
                                     data: {
                                         id: $("#modal-id").val(),

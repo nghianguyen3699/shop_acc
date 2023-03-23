@@ -23,7 +23,7 @@
     <link href="{{ asset('css/shared.css') }}" rel="stylesheet">
 </head>
 
-<body class="bg-image" style="background-image: url(https://sellclonemmo.com/assets/storage/images/bg_loginSIO.png);">
+<body class="bg-image" style="background-image: url(localhost/assets/storage/images/bg_loginSIO.png);">
     <div id="app">
         <main>
             @yield('content')

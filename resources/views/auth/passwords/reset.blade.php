@@ -42,7 +42,7 @@
                         </div>
                         <div class="card-footer">
                             <button type="button" id="btnSaveProfile" class="btn btn-primary">Lưu Thay Đổi</button>
-                            <a type="button" href="https://sellclonemmo.com/" class="btn btn-danger">Đóng</a>
+                            <a type="button" href="localhost/" class="btn btn-danger">Đóng</a>
                         </div>
                     </div>
                 </div>

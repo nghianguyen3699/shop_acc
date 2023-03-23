@@ -9,7 +9,7 @@
                     <div class="card card-block p-card">
                         <div class="profile-box">
                             <div class="profile-card rounded">
-                                <img src="https://sellclonemmo.com/public/datum/assets/images/user/1.jpg"
+                                <img src="localhost/public/datum/assets/images/user/1.jpg"
                                     alt="profile-bg" class="avatar-100 rounded d-block mx-auto img-fluid mb-3">
                                 <h3 class="font-600 text-white text-center mb-0">nghia</h3>
                                 <p class="text-white text-center mb-5">0đ</p>
@@ -197,7 +197,7 @@
                         </div>
                         <div class="card-footer">
                             <button type="button" id="btnSaveProfile" class="btn btn-primary">Lưu Thay Đổi</button>
-                            <a type="button" href="https://sellclonemmo.com/" class="btn btn-danger">Đóng</a>
+                            <a type="button" href="localhost/" class="btn btn-danger">Đóng</a>
                         </div>
                     </div>
                 </div>

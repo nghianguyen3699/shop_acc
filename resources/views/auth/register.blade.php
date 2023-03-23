@@ -8,9 +8,9 @@
                 <div class="card p-3">
                     <div class="card-body">
                         <div class="auth-logo">
-                            <img src="https://sellclonemmo.com/assets/storage/images/logo_dark_8H0.png"
+                            <img src="localhost/assets/storage/images/logo_dark_8H0.png"
                                 class="img-fluid rounded-normal darkmode-logo d-none" alt="logo">
-                            <img src="https://sellclonemmo.com/assets/storage/images/logo_light_HJB.png"
+                            <img src="localhost/assets/storage/images/logo_light_HJB.png"
                                 class="img-fluid rounded-normal light-logo" alt="logo">
                         </div>
                         <h3 class="mb-3 font-weight-bold text-center">Đăng Ký</h3>

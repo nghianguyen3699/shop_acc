@@ -45,7 +45,7 @@
                                 <div class="col-sm-6 col-md-6 col-lg-3 mt-3 mt-lg-0 mb-3">
                                     <div type="button" onclick="openModalAmount(13)"
                                         class="blur-shadow p-4 shadow-showcase text-center">
-                                        <img src="https://sellclonemmo.com/assets/storage/images/bank/9PJ.png"
+                                        <img src="localhost/assets/storage/images/bank/9PJ.png"
                                             width="200px" height="100px">
                                     </div>
                                 </div>
