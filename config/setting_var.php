@@ -3,7 +3,11 @@ return [
 	'ACCOUNT_NAME' => 'NGUYEN HUU NGHIA',
 	'ACCOUNT_NUMBER' => '123456789',
 	'ACCOUNT_BANK' => 'vietcombank',
-];
-return [
-	
+
+	'PHONE_NUMBER' => '0349876543',
+	'EMAIL' => 'test@test.com',
+
+	'STATUS_PAYMENT_PAID' => '1',
+	'STATUS_PAYMENT_UNPAID' => '2',
+	'STATUS_PAYMENT_CANCELED' => '3',
 ];

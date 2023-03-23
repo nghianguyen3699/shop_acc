@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,14 +20,19 @@ Route::get('/', function () {
 
 Route::prefix('client/')->group(function(){
     Auth::routes();
-    Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('client.profile');
+    Route::get('/profile', [ProfileController::class, 'index'])->name('client.profile');
     Route::get('/history', [App\Http\Controllers\HistoryController::class, 'index'])->name('client.history');
     Route::get('/cash-flow', [App\Http\Controllers\CashFlowController::class, 'index'])->name('client.cashflow');
     Route::get('/orders', [App\Http\Controllers\OrdersController::class, 'index'])->name('client.orders');
     Route::get('/top-money', [App\Http\Controllers\TopMoneyController::class, 'index'])->name('client.topmoney');
     Route::get('/recharge', [App\Http\Controllers\RechargeController::class, 'index'])->name('client.recharge');
+    Route::post('/recharge/create', [App\Http\Controllers\RechargeController::class, 'create'])->name('client.recharge.create');
+
     Route::get('/invoices', [App\Http\Controllers\InvoicesController::class, 'index'])->name('client.invoices');
+    Route::delete('/invoices/delete', [App\Http\Controllers\InvoicesController::class, 'delete'])->name('client.invoices.delete');
+
     Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('client.contact');
+
     Route::get('/payment/{code}', [App\Http\Controllers\Client\PaymentController::class, 'index'])->name('client.payment');
     Route::post('/payment', [App\Http\Controllers\Client\PaymentController::class, 'create'])->name('client.payment.create');
 });
@@ -39,6 +45,8 @@ Route::prefix('admin/')->group(function(){
         Route::get('/{id}', [App\Http\Controllers\Client\UserController::class, 'show'])->name('admin.user.{:id}');
     });
 });
+
+Route::post('/test', [App\Http\Controllers\Client\PaymentController::class, 'gen'])->name('test.gen');
 
 
 

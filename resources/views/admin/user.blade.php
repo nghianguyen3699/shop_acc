@@ -55,7 +55,7 @@
                                     <td class="jsgrid-cell jsgrid-align-center" style="width: 100px;">secret</td>
                                     <td class="jsgrid-cell jsgrid-align-center" style="width: 70px;">
                                         <a href="/admin/user/{{ $user->id }}"><button type="button" class="btn btn-primary btn-xs btn-user">Chi tiết</button></a>
-                                        <a href="/admin/message/{{ $user->id }}"<button type="button" class="btn btn-primary btn-xs btn-user" style="width: 55px;">Nhắn tin</button></a>
+                                        <a href="/admin/message?id={{ $user->id }}"><<button type="button" class="btn btn-primary btn-xs btn-user" style="width: 55px;">Nhắn tin</button></a>
                                     </td>
                                 </tr>
                                 @endforeach

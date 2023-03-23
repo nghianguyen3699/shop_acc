@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ResponseTrait;
 use Illuminate\Http\Request;
-// use App\Models\User;
+use App\Models\Payment;
 
 class PaymentController extends Controller
 {
+	use ResponseTrait;
     /**
      * Create a new controller instance.
      *
@@ -25,10 +27,21 @@ class PaymentController extends Controller
      */
     public function index($code)
     {
-        $account_bank = config('setting_var.ACCOUNT_BANK');
-        $account_name = config('setting_var.ACCOUNT_NAME');
-        $account_number = config('setting_var.ACCOUNT_NUMBER');
-        return view('client/payment', ['account_bank' => $account_bank, 'account_name' => $account_name, 'account_number' => $account_number] );
+		$data = Payment::select(['money', 'bank', 'status'])->where('code', $code)->first();
+		if (!$data) {
+			return FALSE;
+		}
+        $phone_number = config('setting_var.PHONE_NUMBER');
+        $email = config('setting_var.EMAIL');
+
+        return view('client/payment', [
+										'status' => $data->status,
+										'code' => $code,
+										'amount' => $data->money,
+										'bank' => $data->bank,
+										'phone_number' => $phone_number,
+										'email' => $email,
+									]);
     }
 
     public function create()
@@ -86,4 +99,16 @@ class PaymentController extends Controller
 
     	return view('client/show_user');
     }
+
+	public function generate_code2(Request $request) {
+		try {
+			// dd($request->all());
+			$data = $request->get('data');
+			$past_code = strtoupper(bin2hex(random_bytes(5)));
+			$code = '123abc';
+			return $this->successResponse($code);
+		} catch (\Throwable $th) {
+			return $this->errorResponse('loi');
+		}
+	}
 }

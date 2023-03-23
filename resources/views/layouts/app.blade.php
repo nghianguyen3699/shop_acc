@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -33,7 +33,6 @@
                             class="img-fluid rounded-normal light-logo" alt="logo">
                         <img src="https://sellclonemmo.com/assets/storage/images/logo_dark_8H0.png"
                             class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-    
                     </a>
                     <div class="side-menu-bt-sidebar-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none"
@@ -266,38 +265,6 @@
                 </div>
             </div>
             <script>
-                function changeLanguage(id) {
-                    $.ajax({
-                        url: "https://sellclonemmo.com/ajaxs/client/changeLanguage.php",
-                        method: "POST",
-                        dataType: "JSON",
-                        data: {
-                            id: id
-                        },
-                        success: function (respone) {
-                            if (respone.status == 'success') {
-                                cuteToast({
-                                    type: "success",
-                                    message: respone.msg,
-                                    timer: 5000
-                                });
-                                location.reload();
-                            } else {
-                                cuteAlert({
-                                    type: "error",
-                                    title: "Error",
-                                    message: respone.msg,
-                                    buttonText: "Okay"
-                                });
-                            }
-                        },
-                        error: function () {
-                            alert(html(response));
-                            history.back();
-                        }
-                    });
-                }
-    
                 function changeLanguage(id) {
                     $.ajax({
                         url: "https://sellclonemmo.com/ajaxs/client/changeLanguage.php",
