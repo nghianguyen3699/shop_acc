@@ -98,7 +98,7 @@
 								<li><strong>Số điện thoại:</strong> (123) 456-7890</li>
 								<li><strong>Số dư:</strong> {{ $user->total_money }}₫</li>
 							</ul>
-						</div
+						</div>
 					</div>
                 </div>
             </div>

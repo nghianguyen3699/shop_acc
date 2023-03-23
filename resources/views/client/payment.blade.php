@@ -7,9 +7,9 @@
 		<div class="container-fluid" style="padding: 1px;padding: 1px;width: 45%;min-width: 800px;">
 			<div class="navbar-header" style="position: relative">
 				<div class="col-xs-12 col-sm-12 col-md-12 text-right" style="padding-right: 0px;">
-					<img src="https://sellclonemmo.vn/public/faces/javax.faces.resource/images/hotline.svg" alt="logo-security" width="35">
+					<img src="" alt="logo-security" width="35">
 					<span>{{ $phone_number }}</span>
-					<img src="https://sellclonemmo.vn/public/faces/javax.faces.resource/images/email.svg" alt="logo-security" width="35">
+					<img src="" alt="logo-security" width="35">
 					<a href="mailto:{{ $email }}"><span>{{ $email }}</span></a>
 				</div>
 			</div>
@@ -21,7 +21,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-4 left" style="background-color: #030303">
 				<div class="info-box">
 					<div class="receipt">
-						<img src="https://sellclonemmo.vn/assets/storage/images/logo_dark_W1Q.png" width="100%">
+						<img src="" width="100%">
 					</div>
 					<div class="entry">
 						<p><i class="fa fa-university" aria-hidden="true"></i>
@@ -114,7 +114,7 @@
 					<p style="color: #737373;   font-size: 11pt; font-weight: bold;">
 						<br>
 						Vui lòng thanh toán vào thông tin tài khoản trên để hệ thống xử lý hoá đơn tự động.                        </p>
-					<a href="https://sellclonemmo.vn/client/invoices">
+					<a href="">
 						<i class="fa fa-arrow-left" aria-hidden="true"></i>
 						<span>Quay Lại</span></a>
 				</div>

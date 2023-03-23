@@ -120,28 +120,28 @@
 		});
 	}
 	
-	function totalRecharge() {
-		$('#total').html('<i class="fa fa-spinner fa-spin"></i> Đang xử lý...');
-		$.ajax({
-			url: "https://sellclonemmo.vn/ajaxs/client/totalRecharge.php",
-			method: "POST",
-			data: {
-				amount: $("#amount").val(),
-				token: $("#token").val(),
-			},
-			success: function(data) {
-				$("#received").html(data);
-				$("#payment").html($("#amount").val().toString().replace(/(.)(?=(\d{3})+$)/g, '$1.'));
-			},
-			error: function() {
-				cuteToast({
-					type: "error",
-					message: 'Không thể tính kết quả thanh toán',
-					timer: 5000
-				});
-			}
-		});
-	}
+	// function totalRecharge() {
+	// 	$('#total').html('<i class="fa fa-spinner fa-spin"></i> Đang xử lý...');
+	// 	$.ajax({
+	// 		url: "",
+	// 		method: "POST",
+	// 		data: {
+	// 			amount: $("#amount").val(),
+	// 			token: $("#token").val(),
+	// 		},
+	// 		success: function(data) {
+	// 			$("#received").html(data);
+	// 			$("#payment").html($("#amount").val().toString().replace(/(.)(?=(\d{3})+$)/g, '$1.'));
+	// 		},
+	// 		error: function() {
+	// 			cuteToast({
+	// 				type: "error",
+	// 				message: 'Không thể tính kết quả thanh toán',
+	// 				timer: 5000
+	// 			});
+	// 		}
+	// 	});
+	// }
 	
 	
 	$("#create_recharge").submit(function(e) {
@@ -176,7 +176,7 @@
 	// 		'disabled',
 	// 		true);
 	// 	$.ajax({
-	// 		url: "https://sellclonemmo.vn/ajaxs/client/deposit-order.php",
+	// 		url: "",
 	// 		method: "POST",
 	// 		dataType: "JSON",
 	// 		data: {
@@ -191,8 +191,7 @@
 	// 					message: respone.msg,
 	// 					timer: 5000
 	// 				});
-	// 				//window.open("https://sellclonemmo.vn/client/payment/" + respone.trans_id + " ", '_blank');
-	// 				setTimeout("location.href = 'https://sellclonemmo.vn/client/payment/" + respone.trans_id +
+	// 				//window.open("" + respone.tr" + respone.trans_id +
 	// 					" ' ;", 500);
 	
 	// 			} else {

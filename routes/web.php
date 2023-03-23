@@ -45,12 +45,3 @@ Route::prefix('admin/')->group(function(){
         Route::get('/{id}', [App\Http\Controllers\Client\UserController::class, 'show'])->name('admin.user.{:id}');
     });
 });
-
-Route::post('/test', [App\Http\Controllers\Client\PaymentController::class, 'gen'])->name('test.gen');
-
-
-
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
